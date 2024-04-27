@@ -1,0 +1,73 @@
+{%include "uheader.html" %}
+
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 50px;
+}
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+#customers tr:hover {background-color: #ddd;}
+#customers th {
+  padding-top: 25px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:  #ff6699;
+  color: white;
+}
+</style>
+
+   <div class="page-nav no-margin row">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-start">Pills Detection</h2>
+                    <ul>
+                        <li> <a href="#"><i class="bi bi-house-door"></i> Home</a></li>
+                        <li><i class="bi bi-chevron-double-right pe-2"></i>Pills Detection</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+ <div class="row contact-rooo big-padding no-margin">
+        <div class="container">
+           <div class="row">
+<form action="dr_detection2" enctype="multipart/form-data" method="post">
+
+            <div style="padding:20px" class="col-sm-7">
+            <h2 class="fs-4 fw-bold" >
+
+                <div class="row cont-row">
+
+                    <div class="col-sm-8">
+
+
+                        <img src="{{ url_for('static',filename='pills_detection.jpg')}}" width="500" height="500" alt=""><br><br>
+
+                        <table id="customers">
+                            <tr><th>PILL NAME</th><th>USAGE</th></tr>
+                            <tr><td>{{result[0][0]}}</td><td><p>{{result[0][1]}}</p></td></tr>
+</table>
+                    </div>
+                </div>
+
+                 <div style="margin-top:10px;" class="row">
+                    <div style="padding-top:10px;" class="col-sm-3"><label></label></div>
+
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+
+
+
+            </div>
+           </form>
+          </div>
+        </div>
+      </div>
+<br><br>
+
+{%include "footer.html" %}

@@ -1,0 +1,66 @@
+    <!doctype html>
+        <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <title>Pills Detection</title>
+            <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+            <link rel="shortcut icon" href="assets/images/fav.jpg">
+            <link href="{{ url_for('static',filename='assets/css/bootstrap.min.css')}}" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+            <link href="{{ url_for('static',filename='assets/plugins/testimonial/css/owl.carousel.min.css')}}" rel="stylesheet">
+            <link href="{{ url_for('static',filename='assets/plugins/testimonial/css/owl.theme.min.css')}}" rel="stylesheet">
+                        <link href="{{ url_for('static',filename='assets/css/style.css')}}" rel="stylesheet" type="text/css" >
+        </head>
+        <body class="bg-white">
+          <header>
+                <div id="menu-jk" class="nav-part shadow-md bg-white navcol">
+                    <div class="container-lg">
+                        <div class="row  p-2">
+                            <div class="col-lg-4 p-2">
+
+                                 <a  data-bs-toggle="collapse" data-bs-target="#menu" class="float-end d-lg-none pt-1 ps-3"><i class="bi pt-1 fs-1 cp bi-list"></i></a>
+                            </div>
+                            <div id="menu" class="col-lg-8 d-none d-lg-block">
+                                <ul class="fw-bold float-end nacul fs-7">
+                                    <li class="float-start p-3 px-4"><a href="{{ url_for('index') }}">Home</a></li>
+                                    <li class="float-start p-3 px-4"><a href="{{ url_for('admin') }}">Admin</a></li>
+                                       <li class="float-start p-3 px-4"><a href="{{ url_for('user') }}">User</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+ <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                           <img class="d-block w-100" src="{{ url_for('static',filename='assets/images/slider/pillbg.jpg')}}" >
+                  <div class="carousel-caption   d-md-block">
+                      <div class="row">
+                           <div class="col-lg-6 text-start ">
+                               <h2 class="fs-12 fw-bolder text-start "><font color="white">Detection and Identification of Pills using <br><span  class="text-primary">MobileNet Model</span> </font></h2>
+                           </div>
+                           <div class="col-lg-6 d-none d-lg-block">
+                               <img class="w-100" src="" alt="">
+                               <!--img class="w-100" src="{{ url_for('static',filename='assets/images/tb.png')}}" >-->
+                           </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </body>
+		<script src="{{ url_for('static',filename='assets/js/jquery-3.2.1.min.js')}}"></script>
+		<script src="{{ url_for('static',filename='assets/js/popper.min.js')}}/"></script>
+		<script src="{{ url_for('static',filename='assets/js/bootstrap.bundle.min.js')}}"></script>
+    	<script src="{{ url_for('static',filename='assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js')}}"></script>
+		<script src="{{ url_for('static',filename='assets/plugins/testimonial/js/owl.carousel.min.js')}}/"></script>
+		<script src="{{ url_for('static',filename='assets/js/script.js')}}"></script>
+    </html>

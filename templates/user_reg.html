@@ -1,0 +1,60 @@
+{%include "header.html" %}
+   <div class="page-nav no-margin row">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-start">User</h2>
+                    <ul>
+                        <li> <a href="#"><i class="bi bi-house-door"></i> Home</a></li>
+                        <li><i class="bi bi-chevron-double-right pe-2"></i>User Registration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+{% if messages %}
+ <script> alert('Username already exists..!')</script>
+    {% endif %}
+<div class="row contact-rooo big-padding no-margin">
+        <div class="container">
+           <div class="row">
+<form action="user_reg_store" method="post">
+            <div style="padding:20px" class="col-sm-7">
+            <h2 class="fs-4 fw-bold" >Registration Form</h2> <br>
+                <div class="row cont-row">
+                    <div  class="col-sm-3"><label>Name </label><span>:</span></div>
+                    <div class="col-sm-8"><input type="text" placeholder="Enter Name" name="name" class="form-control input-sm"  required></div>
+                </div>
+
+                <div  class="row cont-row">
+                    <div  class="col-sm-3"><label>User name </label><span>:</span></div>
+                    <div class="col-sm-8"><input type="text" name="uid" placeholder="Enter User name" class="form-control input-sm"  required></div>
+                </div>
+                 <div  class="row cont-row">
+                    <div  class="col-sm-3"><label>Password </label><span>:</span></div>
+                    <div class="col-sm-8"><input type="password" name="pwd" placeholder="Enter Password" class="form-control input-sm"  required></div>
+                </div>
+
+                  <div  class="row cont-row">
+                    <div  class="col-sm-3"><label>Email </label><span>:</span></div>
+                    <div class="col-sm-8"><input type="text" name="email" placeholder="Enter Email Address" class="form-control input-sm"  required></div>
+                </div>
+
+                 <div  class="row cont-row">
+                    <div  class="col-sm-3"><label>Mobile Number</label><span>:</span></div>
+                    <div class="col-sm-8"><input type="text" pattern="[0-9]{10,10}" name="mno" placeholder="Enter Mobile Number" class="form-control input-sm"  required></div>
+                </div>
+
+                 <div style="margin-top:10px;" class="row">
+                    <div style="padding-top:10px;" class="col-sm-3"><label></label></div>
+                    <div class="col-sm-8">
+                     <button class="btn btn-primary fs-5 btn-sm">Submit</button>
+                    </div>
+                </div>
+            </div>
+</form>
+          </div>
+        </div>
+      </div>
+
+
+{%include "footer.html" %}
