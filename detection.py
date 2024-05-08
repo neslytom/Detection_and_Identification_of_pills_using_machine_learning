@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 import sys
 from keras.preprocessing.image import load_img, img_to_array
-#from tensorflow.keras.utils import img_to_array,load_img
+
 from keras.models import Sequential, load_model
 from keras.preprocessing import image
 from keras import backend as K
